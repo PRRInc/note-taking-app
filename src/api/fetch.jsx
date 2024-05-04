@@ -1,4 +1,4 @@
-// Shows
+// Notes
 const URL = process.env.REACT_APP_API_BASE_URL;
 
 // Create
@@ -24,13 +24,13 @@ export function getAllNotes() {
   return fetch(`${URL}/notes`).then((response) => response.json());
 }
 
-// Show/Get one
+// Note/Get one
 export function getOneNote(id) {
   return fetch(`${URL}/notes/${id}`).then((response) => response.json());
 }
 
 // Update
-export function updateNote(id, show) {
+export function updateNote(id, note) {
   const options = {
     method: "PUT",
     body: JSON.stringify(note),
