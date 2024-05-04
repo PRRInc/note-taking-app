@@ -16,7 +16,7 @@ function Show() {
 
   function handleDelete() {
     destroyShow(id)
-      .then(() => navigate("/shows"))
+      .then(() => navigate("/notes"))
       .catch((error) => {
         console.error(error);
         setLoadingError(true);
@@ -24,7 +24,7 @@ function Show() {
   }
 
   useEffect(() => {
-    getOneShow(id)
+    getOneNote(id)
       .then((response) => {
         setShow(response);
         if (Object.keys(response).length === 0) {
@@ -41,35 +41,35 @@ function Show() {
 
 
   return (
-    <section className="shows-show-wrapper">
-      <h2>{show.title}</h2>
-      <section className="shows-show">
+    <section className="notes-note-wrapper">
+      <h2>{note.title}</h2>
+      <section className="notes-note">
         {loadingError ? (
           <ErrorMessage />
         ) : (
           <>
             <aside>
               <p>
-                <span>Duration:</span> {show.duration}
+                <span>Duration:</span> {note.duration}
               </p>
               <p>
-                <span>Listed Categories:</span> {show.listedIn}
+                <span>Listed Categories:</span> {note.listedIn}
               </p>
               <p>
-                <span>Country:</span> {show.country}
+                <span>Country:</span> {note.country}
               </p>
               <p>
-                <span>Rating:</span> {show.rating}
+                <span>Rating:</span> {note.rating}
               </p>
               <p>
-                <span>Date Added:</span> {show.dateAdded}
+                <span>Date Added:</span> {note.dateAdded}
               </p>
             </aside>
             <article>
-              <p>{show.description}</p>
+              <p>{note.description}</p>
             </article>
             <aside>
-              <button className="delete" onClick={() => handleDelete(show.id)}>
+              <button className="delete" onClick={() => handleDelete(note.id)}>
                 Remove show
               </button>
               <Link to={`/notes/${id}/edit`}>
