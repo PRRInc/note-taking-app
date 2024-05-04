@@ -6,7 +6,7 @@ import "./Note.css";
 
 import ErrorMessage from "../errors/ErrorMessage";
 
-function Show() {
+function Note() {
   const [note, setNote] = useState({});
   const [loadingError, setLoadingError] = useState(false);
 
@@ -26,7 +26,7 @@ function Show() {
   useEffect(() => {
     getOneNote(id)
       .then((response) => {
-        setShow(response);
+        setNote(response);
         if (Object.keys(response).length === 0) {
           setLoadingError(true);
         } else {
@@ -83,4 +83,4 @@ function Show() {
   );
 }
 
-export default Show;
+export default Note;
