@@ -1,0 +1,79 @@
+.menubox {
+    /* display: flex; */
+    margin-left:0px;
+    width: 170px;
+    height: 212px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: white;
+    margin-top: -65px;
+    box-shadow: 2px 2px 2px 1.5px rgb(210,210,210,210);
+}
+
+.list-container {
+    /* display:block; */
+    margin-left: -40px;
+    margin-top: 0px;
+}
+
+li {
+    /* margin-left: 20px; */
+    list-style-type: none;
+    margin-top: 0px;
+    /* border-bottom: 1px solid black; */
+}
+
+.list-item-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: white;
+    height: 70px;
+    z-index: 1;
+    /* border: 0.5px solid black; */
+}
+
+.list-item-add:hover {
+    border: 1.2px solid green;
+    border-radius: 7px;
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 100;
+    background-color: rgb(165, 251, 165);
+}
+
+.list-item-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 70px;
+}
+
+.list-item-search:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 1.2px solid green;
+    border-radius: 7px;
+    background-color: rgb(165, 251, 165);
+}
+
+.list-item-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: white;
+    border-radius: 7px;
+    height: 70px;
+}
+
+.list-item-tags:hover {
+    cursor: pointer;
+    border: 1.2px solid green;
+    border-radius: 7px;
+    transform: scale(1.05);
+    background-color: rgb(165, 251, 165);
+}
+
+

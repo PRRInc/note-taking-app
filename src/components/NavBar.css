@@ -1,0 +1,26 @@
+.navbar {
+    
+    border: 1px solid black;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 1.5px rgb(210,210,210,210);
+}
+
+.menu-icon {
+    width: 50px;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    /* position: absolute; */
+    font-family: "Caveat";
+    font-size: 50px;
+    margin-left: 600px;
+    margin-top: -60px;
+}
