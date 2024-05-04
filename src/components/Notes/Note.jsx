@@ -4,7 +4,7 @@ import { destroyNote, getOneNote } from "../../api/fetch";
 
 import "./Note.css";
 
-import ErrorMessage from "../errors/ErrorMessage";
+import ErrorMessage from "..components/errors/ErrorMessage";
 
 function Note() {
   const [note, setNote] = useState({});
