@@ -1,42 +1,42 @@
 // Shows
-const URL = process.env.REACT_APP_API_BASE_URL;
+const URL = https://my-json-server.typicode.com/PRRInc/notes-demo-server/db;
 
 // Create
-export function createShow(show) {
+export function createNote(note) {
   const options = {
     method: "POST",
-    body: JSON.stringify(show),
+    body: JSON.stringify(note),
     headers: { "Content-Type": "application/json" },
   };
-  return fetch(`${URL}/shows/`, options).then((response) => {
+  return fetch(`${URL}/notes/`, options).then((response) => {
     return response.json();
   });
 }
 
 // Delete
-export function destroyShow(id) {
+export function destroyNote(id) {
   const options = { method: "DELETE" };
-  return fetch(`${URL}/shows/${id}`, options);
+  return fetch(`${URL}/notes/${id}`, options);
 }
 
 // Index/Get all
-export function getAllShows() {
-  return fetch(`${URL}/shows`).then((response) => response.json());
+export function getAllNotes() {
+  return fetch(`${URL}/notes`).then((response) => response.json());
 }
 
 // Show/Get one
-export function getOneShow(id) {
-  return fetch(`${URL}/shows/${id}`).then((response) => response.json());
+export function getOneNote(id) {
+  return fetch(`${URL}/notes/${id}`).then((response) => response.json());
 }
 
 // Update
-export function updateShow(id, show) {
+export function updateNote(id, show) {
   const options = {
     method: "PUT",
-    body: JSON.stringify(show),
+    body: JSON.stringify(note),
     headers: { "Content-Type": "application/json" },
   };
-  return fetch(`${URL}/shows/${id}`, options).then((response) => {
+  return fetch(`${URL}/notes/${id}`, options).then((response) => {
     return response.json();
   });
 }

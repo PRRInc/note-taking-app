@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { destroyShow, getOneShow } from "../../api/fetch";
+import { destroyNote, getOneNote } from "../../api/fetch";
 
-import "./Show.css";
+import "./Note.css";
 
 import ErrorMessage from "../errors/ErrorMessage";
 
 function Show() {
-  const [show, setShow] = useState({});
+  const [note, setNote] = useState({});
   const [loadingError, setLoadingError] = useState(false);
 
   const { id } = useParams();
