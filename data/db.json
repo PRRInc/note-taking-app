@@ -1,0 +1,8 @@
+{
+    "notes": [
+      { "id": 1, "title": "A thought I had", "body": "Camels are weird", "category": "school" },
+      { "id": 2, "title": "A dream I dreamt", "body": "I was a camel", "category": "house" },
+      { "id": 3, "title": "A thing I did", "body": "I rode a camel", "category": "ideas" }
+    ]
+  }
+  
