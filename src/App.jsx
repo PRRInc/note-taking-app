@@ -4,6 +4,7 @@ import './App.css'
 // Components
 // import Footer from "./components/Footer";
 import Home from "./components/Home";
+// import AboutUs from "./components/AboutUs"
 // import NavBar from "./components/NavBar";
 import Note from "./components/Notes/Note";
 // import EditNote from "./components/Notes/EditNote";
@@ -18,7 +19,7 @@ function App() {
         {/* <NavBar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutus" element={<AboutUs />} />
+          {/* <Route path="/aboutus" element={<AboutUs />} /> */}
           {/* <Route path="/notes/new" element={<NewNote />} /> */}
           <Route path="/notes/:id" element={<Note />} />
           {/* <Route path="/notes/:id/edit" element={<EditNote />} /> */}
@@ -29,4 +30,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
