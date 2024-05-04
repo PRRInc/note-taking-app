@@ -3,7 +3,7 @@ import './App.css'
 
 // Components
 import Footer from "./components/common/Footer";
-import Home from "./components/home/Home";
+import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Note from "./components/Notes/Note";
 import EditNote from "./components/Notes/EditNote";
