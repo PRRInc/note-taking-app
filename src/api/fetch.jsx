@@ -1,5 +1,5 @@
 // Shows
-const URL = https://my-json-server.typicode.com/PRRInc/notes-demo-server/db;
+const URL = process.env.REACT_APP_API_BASE_URL;
 
 // Create
 export function createNote(note) {
