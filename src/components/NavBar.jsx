@@ -13,7 +13,7 @@ export default function NavBar() {
 
     return (
         <div className="navbar">
-            <img onClick={handleMenu} className="menu-icon" src="src/assets/menu-bar.png"/>
+            <img onClick={handleMenu} className="menu-icon" src="src/assets/menu1.png"/>
             <p className="title">Clever Note .</p>
             {menu ? <MenuBox/> : null}
         </div>

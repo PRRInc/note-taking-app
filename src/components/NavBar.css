@@ -1,11 +1,11 @@
 .navbar {
-    
-    border: 1px solid black;
+    color: white;
+    /* border: 1px solid black; */
     height: 50px;
     padding: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 7px;
-    box-shadow: 2px 2px 2px 1.5px rgb(210,210,210,210);
+    /* box-shadow: 2px 2px 2px 1.5px rgb(210,210,210,210); */
 }
 
 .menu-icon {
@@ -20,7 +20,8 @@
     display: flex;
     /* position: absolute; */
     font-family: "Caveat";
-    font-size: 50px;
+    font-size: 60px;
     margin-left: 600px;
     margin-top: -60px;
+    transform: rotate(355deg)
 }
