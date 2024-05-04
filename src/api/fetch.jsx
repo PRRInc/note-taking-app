@@ -1,5 +1,5 @@
 // Notes
-const URL = import.meta.env.REACT_APP_API_BASE_URL;
+const URL = import.meta.env.VITE_APP_API_BASE_URL;
 
 // Create
 export function createNote(note) {
