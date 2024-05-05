@@ -1,0 +1,47 @@
+.notes-note-wrapper {
+    margin: 0 auto;
+    width: 70%;
+  }
+  
+  .notes-note {
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    color: var(--gray);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  .notes-note article {
+    padding: 10px 25px;
+  }
+  
+  .notes-note aside {
+    background: var(--primary);
+    color: var(--light);
+  }
+  
+  .notes-note aside p {
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 25px;
+    padding: 0;
+    width: auto;
+  }
+  
+  .notes-note aside span {
+    font-weight: bold;
+  }
+  
+  .notes-note aside button {
+    background: none;
+    border: none;
+    color: var(--light);
+    cursor: pointer;
+    margin: 10px 25px;
+    text-decoration: underline;
+  }
+  
+  .notes-note aside button:hover {
+    text-decoration: none;
+  }
+  

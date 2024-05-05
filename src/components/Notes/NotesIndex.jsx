@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import { getAllNotes } from "../api/fetch";
-import ErrorMessage from "./errors/ErrorMessage";
+import { getAllNotes } from "../../api/fetch";
+import ErrorMessage from "../errors/ErrorMessage";
 import { useEffect, useState } from "react";
-import NoteListing from "./Notes/NoteListing";
+import NoteListing from "./NoteListing";
 
-import "./Notes/NoteIndex.css";
+import "./NotesIndex.css";
 
 
 
-export default function Home() {
+export default function NotesIndex() {
   const [loadingError, setLoadingError] = useState(false);
   const [notes, setNotes] = useState([]);
   const [allNotes, setAllNotes] = useState([]);
@@ -40,8 +40,6 @@ export default function Home() {
         setLoadingError(true);
       });
   }, []);
-
-  console.log(notes);
 
   return (
     <div>
