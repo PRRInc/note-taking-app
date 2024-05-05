@@ -11,10 +11,10 @@ export default function NoteListing({ note }) {
       <aside className="details">
         <p>
           <span>Listed Categories:</span>
-          {note.listedIn}
+          {note.catogery}
         </p>
         <p>
-          <span>Duration:</span> {note.duration}
+          <span>Date Added:</span> {note.dateAdded}
         </p>
       </aside>
     </article>

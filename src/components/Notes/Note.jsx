@@ -59,9 +59,6 @@ function Note() {
                 <span>Tags:</span> {note.tags}
               </p>
               <p>
-                <span>Rating:</span> {note.rating}
-              </p>
-              <p>
                 <span>Date Added:</span> {note.dateAdded}
               </p>
             </aside>
