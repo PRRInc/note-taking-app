@@ -5,7 +5,7 @@ import ErrorMessage from "./errors/ErrorMessage";
 import { useEffect, useState } from "react";
 import NoteListing from "./Notes/Notelisting";
 
-import "./Notes/NoteIndex.css";
+import "./Notes/NotesIndex.css";
 
 
 export default function Home() {
@@ -55,8 +55,8 @@ export default function Home() {
           </button>
           <br />
           <label htmlFor="searchTitle">
-            Search Notes:
             <input
+              className="search-bar"
               type="text"
               value={searchTitle}
               id="searchTitle"

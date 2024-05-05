@@ -4,7 +4,7 @@ import "./NoteListing.css";
 export default function NoteListing({ note }) {
   return (
     <article className="note">
-      <h3 className="title">
+      <h3 className="title1">
         <Link to={`/notes/${note.id}`}>{note.title}</Link>
       </h3>
       <p className="description">{note.description}</p>
