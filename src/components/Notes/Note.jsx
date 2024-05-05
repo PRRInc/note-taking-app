@@ -15,7 +15,7 @@ function Note() {
   let navigate = useNavigate();
 
   function handleDelete() {
-    destroyShow(id)
+    destroyNote(id)
       .then(() => navigate("/notes"))
       .catch((error) => {
         console.error(error);
@@ -50,13 +50,13 @@ function Note() {
           <>
             <aside>
               <p>
-                <span>Duration:</span> {note.duration}
+                <span>Priority:</span> {note.priority}
               </p>
               <p>
-                <span>Listed Categories:</span> {note.listedIn}
+                <span>Categories:</span> {note.categories}
               </p>
               <p>
-                <span>Country:</span> {note.country}
+                <span>Tags:</span> {note.tags}
               </p>
               <p>
                 <span>Rating:</span> {note.rating}
@@ -70,7 +70,7 @@ function Note() {
             </article>
             <aside>
               <button className="delete" onClick={() => handleDelete(note.id)}>
-                Remove show
+                Remove note
               </button>
               <Link to={`/notes/${id}/edit`}>
                 <button>Edit</button>
