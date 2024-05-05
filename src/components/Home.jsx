@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { getAllNotes } from "../api/fetch";
 import ErrorMessage from "./errors/ErrorMessage";
 import { useEffect, useState } from "react";
-import NoteListing from "./Notes/NoteListing";
+import NoteListing from "./Notes/Notelisting";
 
 import "./Notes/NotesIndex.css";
 
