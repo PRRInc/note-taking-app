@@ -67,7 +67,7 @@ export default function EditNote() {
         onChange={handleTextChange}
       />
 
-      <label htmlFor="type">Type</label>
+      {/* <label htmlFor="type">Type</label>
       <input
         type="text"
         id="type"
@@ -121,7 +121,7 @@ export default function EditNote() {
         id="dateAdded"
         value={note.dateAdded}
         onChange={handleTextChange}
-      />
+      /> */}
 
       <br />
 
