@@ -14,7 +14,8 @@
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(2, 1fr);
-    margin: 20px 0;
+    margin-left: 295px;
+    margin-top: 0px;
   }
   
   button a {
@@ -25,7 +26,7 @@
     text-decoration: none;
   }
   
-  @media screen and (max-width: 1000px) {
+  /* @media screen and (max-width: 1000px) {
     .notes-index-wrapper {
       width: 90%;
     }
@@ -38,5 +39,5 @@
     .notes-index {
       grid-template-columns: 1fr;
     }
-  }
+  } */
   

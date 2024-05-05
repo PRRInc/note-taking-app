@@ -14,7 +14,9 @@ export default function MenuBar({ handleSearchBar }) {
                 <Link style={{ "text-decoration": "none" }} to="/notes/new">
                     <li className="list-item-add">Add</li>
                 </Link>
-                <li onClick={handleSearchBar} className="list-item-search">Search</li>
+                <Link to="/" style={{ "text-decoration": "none" }}>
+                    <li onClick={handleSearchBar} className="list-item-search">Search</li>
+                </Link>
                 <li className="list-item-tags">Tags</li>
                 <li className="list-item-aboutus">About Us</li>
             </ul>
