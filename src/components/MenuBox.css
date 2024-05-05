@@ -80,3 +80,20 @@ li {
 }
 
 
+.list-item-aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: white;
+    border-radius: 7px;
+    height: 70px;
+    color: black;
+}
+
+.list-item-aboutus:hover {
+    cursor: pointer;
+    border: 1.2px solid green;
+    border-radius: 7px;
+    transform: scale(1.05);
+    background-color: rgb(165, 251, 165);
+}

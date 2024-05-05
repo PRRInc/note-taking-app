@@ -7,6 +7,7 @@ export default function MenuBar() {
                 <li className="list-item-add">Add</li>
                 <li className="list-item-search">Search</li>
                 <li className="list-item-tags">Tags</li>
+                <li className="list-item-aboutus">About Us</li>
             </ul>
         </div>
     )
