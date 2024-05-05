@@ -2,7 +2,7 @@
     /* display: flex; */
     margin-left:0px;
     width: 170px;
-    height: 212px;
+    height: 282px;
     border: 1px solid black;
     border-radius: 7px;
     background-color: white;
@@ -30,18 +30,21 @@ li {
     border-radius: 7px;
     background-color: white;
     height: 70px;
-    z-index: 1;
+    z-index: -1;
     color: black;
+    text-decoration: none;
     /* border: 0.5px solid black; */
 }
 
 .list-item-add:hover {
-    border: 1.2px solid green;
+    border: 1.2px solid white;
     border-radius: 7px;
     cursor: pointer;
-    transform: scale(1.05);
-    z-index: 100;
-    background-color: rgb(165, 251, 165);
+    transform: scale(1.07);
+    z-index: 1000;
+    background-color: rgb(107, 66, 66);
+    color: white;
+    
 }
 
 .list-item-search {
@@ -55,10 +58,11 @@ li {
 
 .list-item-search:hover {
     cursor: pointer;
-    transform: scale(1.05);
-    border: 1.2px solid green;
+    transform: scale(1.07);
+    border: 1.2px solid white;
     border-radius: 7px;
-    background-color: rgb(165, 251, 165);
+    background-color: rgb(107, 66, 66);
+    color: white;
 }
 
 .list-item-tags {
@@ -73,10 +77,11 @@ li {
 
 .list-item-tags:hover {
     cursor: pointer;
-    border: 1.2px solid green;
+    border: 1.2px solid white;
     border-radius: 7px;
-    transform: scale(1.05);
-    background-color: rgb(165, 251, 165);
+    transform: scale(1.07);
+    background-color: rgb(107, 66, 66);
+    color: white;
 }
 
 
@@ -92,8 +97,9 @@ li {
 
 .list-item-aboutus:hover {
     cursor: pointer;
-    border: 1.2px solid green;
+    border: 1.2px solid white;
     border-radius: 7px;
-    transform: scale(1.05);
-    background-color: rgb(165, 251, 165);
+    transform: scale(1.07);
+    background-color: rgb(107, 66, 66);
+    color: white;
 }
