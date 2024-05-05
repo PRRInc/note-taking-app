@@ -21,7 +21,27 @@
     /* position: absolute; */
     font-family: "Caveat";
     font-size: 60px;
+    color: white;
+
     margin-left: 600px;
     margin-top: -60px;
     transform: rotate(355deg)
 }
+
+.search-bar {
+    border: none;
+    display: flex;
+    position: fixed;
+    border-radius: 10px;
+    left: 650px;
+    top: 200px;
+    height: 27px;
+    width: 300px;
+    background-image: url("src/assets/search1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 270px;
+    background-color: rgb(210, 210, 210, 0.8);
+    
+}
+
