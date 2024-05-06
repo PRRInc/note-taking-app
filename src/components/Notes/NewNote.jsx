@@ -50,7 +50,7 @@ export default function NewNote(){
                 // onChange={handleTextChange}
               />
         
-              <label htmlFor="type">Type</label>
+              <label htmlFor="type">Catergory:</label>
               <input
                 type="text"
                 id="type"
@@ -58,7 +58,7 @@ export default function NewNote(){
                 // onChange={handleTextChange}
               />
         
-              <label htmlFor="rating">Rating:</label>
+              <label htmlFor="rating">Tags:</label>
               <input
                 type="text"
                 id="rating"
@@ -66,38 +66,13 @@ export default function NewNote(){
                 // onChange={handleTextChange}
               />
         
-              <label htmlFor="listedIn">Listed in</label>
+              <label htmlFor="listedIn">Priority:</label>
               <input
                 type="text"
                 id="listedIn"
                 // value={show.listedIn}
                 // onChange={handleTextChange}
               />
-        
-              <label htmlFor="duration">Duration</label>
-              <input
-                type="text"
-                id="duration"
-                // value={show.duration}
-                // onChange={handleTextChange}
-              />
-        
-              <label htmlFor="releaseYear">Release Year</label>
-              <input
-                type="text"
-                id="releaseYear"
-                // value={show.releaseYear}
-                // onChange={handleTextChange}
-              />
-        
-              <label htmlFor="country">Country</label>
-              <input
-                type="text"
-                id="country"
-                // value={show.country}
-                // onChange={handleTextChange}
-              />
-        
               <label htmlFor="dateAdded">Date added:</label>
               <input
                 type="text"
