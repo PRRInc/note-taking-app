@@ -4,17 +4,17 @@ import "./NoteListing.css";
 export default function NoteListing({ note }) {
   return (
     <article className="note">
-      <h3 className="title">
+      <h3 className="title1">
         <Link to={`/notes/${note.id}`}>{note.title}</Link>
       </h3>
       <p className="description">{note.description}</p>
       <aside className="details">
         <p>
           <span>Listed Categories:</span>
-          {note.listedIn}
+          {note.catogery}
         </p>
         <p>
-          <span>Duration:</span> {note.duration}
+          <span>Date Added:</span> {note.dateAdded}
         </p>
       </aside>
     </article>

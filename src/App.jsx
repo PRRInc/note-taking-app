@@ -9,7 +9,7 @@ import Home from "./components/Home";
 // import AboutUs from "./components/AboutUs"
 import NavBar from "./components/NavBar";
 import Note from "./components/Notes/Note";
-// import EditNote from "./components/Notes/EditNote";
+import EditNote from "./components/Notes/EditNote";
  import NewNote from "./components/Notes/NewNote";
 
 
@@ -24,7 +24,7 @@ function App() {
           {/* <Route path="/aboutus" element={<AboutUs />} /> */}
           <Route path="/notes/new" element={<NewNote />} />
           <Route path="/notes/:id" element={<Note />} />
-          {/* <Route path="/notes/:id/edit" element={<EditNote />} /> */}
+          <Route path="/notes/:id/edit" element={<EditNote />} />
         </Routes>
         {/* <Footer /> */}
       </Router>
