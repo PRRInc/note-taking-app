@@ -15,7 +15,7 @@ export default function MenuBar({ handleSearchBar }) {
                     <li className="list-item-add">Add</li>
                 </Link>
                 <Link to="/" style={{ "textDecoration": "none" }}>
-                    <li onClick={handleSearchBar} className="list-item-search">Search</li>
+                    <li onClick={handleSearchBar} className="list-item-search">Home</li>
                 </Link>
                 <li className="list-item-tags">Tags</li>
                 <li className="list-item-aboutus">About Us</li>

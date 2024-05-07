@@ -25,7 +25,15 @@ export default function NewNote(){
         
           function handleSubmit(event) {
             event.preventDefault();
-            createNote(note)
+            const date = new Date();
+            let hours = date.getHours();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12 || 12; // Convert hour to 12-hour format
+            const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()} ${hours}:${date.getMinutes()}:${date.getSeconds()} ${ampm}`;
+            createNote({
+              ...note,
+              dateAdded: formattedDate,
+            })
               .then((response) => {
                 console.log(response,"here")
                 navigate(`/notes/${response.id}`);
