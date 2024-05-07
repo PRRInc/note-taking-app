@@ -49,11 +49,11 @@ export default function Home() {
         <ErrorMessage />
       ) : (
         <section className="notes-index-wrapper">
-          <h2>All Notes</h2>
+          {/* <h2>All Notes</h2>
           <button>
             <Link to="/notes/new">Add a new note</Link>
           </button>
-          <br />
+          <br /> */}
           <label htmlFor="searchTitle">
             <input
               className="search-bar"
