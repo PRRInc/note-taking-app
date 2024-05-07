@@ -34,6 +34,7 @@ export default function NewNote(){
               ...note,
               dateAdded: formattedDate,
             })
+            createNote(note)
               .then((response) => {
                 console.log(response,"here")
                 navigate(`/notes/${response.id}`);

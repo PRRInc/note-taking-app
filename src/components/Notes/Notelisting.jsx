@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import "./NoteListing.css";
 
 export default function NoteListing({ note }) {
-  return(
+  return (
     <article className="note">
       <h3 className="title1">
         <Link to={`/notes/${note.id}`}>{note.title}</Link>
