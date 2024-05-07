@@ -10,8 +10,8 @@ export default function NoteListing({ note }) {
       <p className="description">{note.description}</p>
       <aside className="details">
         <p>
-          <span>Listed Categories:</span>
-          {note.catogery}
+          <span>Listed Category:</span>
+          {note.category}
         </p>
         <p>
           <span>Date Added:</span> {note.dateAdded}
