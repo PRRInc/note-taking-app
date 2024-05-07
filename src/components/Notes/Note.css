@@ -1,6 +1,7 @@
 .notes-note-wrapper {
     margin: 0 auto;
     width: 70%;
+    color: white
   }
   
   .notes-note {
@@ -13,6 +14,7 @@
   
   .notes-note article {
     padding: 10px 25px;
+    background: white;
   }
   
   .notes-note aside {

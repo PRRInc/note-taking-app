@@ -2,7 +2,6 @@ import {Link} from 'react-router-dom'
 import "./NoteListing.css";
 
 export default function NoteListing({ note }) {
-  console.log(note)
   return (
     <article className="note">
       <h3 className="title1">
@@ -11,13 +10,12 @@ export default function NoteListing({ note }) {
       <p className="description">{note.description}</p>
       <aside className="details">
         <p>
-          <span>Listed Categories:</span>
-          {note.catogery}
+          <span>Listed Category:</span>
+          {note.category}
         </p>
         <p>
           <span>Date Added:</span> {note.dateAdded}
         </p>
       </aside>
     </article>
-  );
-}
+  );}
