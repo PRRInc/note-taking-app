@@ -53,7 +53,7 @@ function Note() {
                 <span>Priority:</span> {note.priority}
               </p>
               <p>
-                <span>Categories:</span> {note.categories}
+                <span>Category:</span> {note.category}
               </p>
               <p>
                 <span>Tags:</span> {note.tags}
