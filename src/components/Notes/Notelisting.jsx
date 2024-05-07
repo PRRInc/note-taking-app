@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom'
 import "./NoteListing.css";
 
 export default function NoteListing({ note }) {
+  console.log(note)
   return (
     <article className="note">
       <h3 className="title1">

@@ -8,7 +8,7 @@ export function createNote(note) {
     body: JSON.stringify(note),
     headers: { "Content-Type": "application/json" },
   };
-  return fetch(`${URL}/notes/`, options).then((response) => {
+  return fetch(`${URL}/notes`, options).then((response) => {
     return response.json();
   });
 }
